@@ -20,12 +20,9 @@ def get_cats_info(path):
                 row = row.split(',')
                 employees +=[{key_lists[i]:row[i] for i in range(min(len(key_lists),len(row)))}]
         return employees
-    
     except FileNotFoundError:
         return None
-    
     except ValueError:
         return None
-    
     except IndexError:
         return None
