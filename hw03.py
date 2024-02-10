@@ -2,7 +2,6 @@ import sys
 from pathlib import Path
 from hw4_3 import get_directory_contents
 
-
 def main():
     user_input = ''
     if len(sys.argv) > 1:
@@ -15,7 +14,6 @@ def main():
             print(f'{user_input} isn\'t directory')
     else:
         print(f'{path.absolute()} isn\'t exists')
-
 
 if __name__ == '__main__':
     main()

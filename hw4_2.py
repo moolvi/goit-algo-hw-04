@@ -5,7 +5,6 @@ def get_cats_info(path):
     employees = []
     try:
         with open(path, encoding='utf-8') as file:
-            
             #____1____Solution
             #for row in file.readlines():
                 #employees += [dict(zip(["id", "name", "age"], re.split('[,\n]', row)))]
